@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9799e6b8-cf90-45ef-a21b-d187bac6d083" name="Default" comment="" />
+    <list default="true" id="9799e6b8-cf90-45ef-a21b-d187bac6d083" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/MainController.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,15 +51,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/scripts/form.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,8 +63,17 @@
       <file leaf-file-name="MainController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
+            <state relative-caret-position="390">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -103,6 +107,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -139,11 +146,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-57" />
-    <option name="y" value="191" />
+    <option name="x" value="109" />
+    <option name="y" value="15" />
     <option name="width" value="1555" />
     <option name="height" value="1031" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -190,6 +198,12 @@
               <item name="localhost" type="b2602c69:ProjectViewProjectNode" />
               <item name="localhost" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="localhost" type="b2602c69:ProjectViewProjectNode" />
+              <item name="localhost" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -210,12 +224,6 @@
               <item name="localhost" type="b2602c69:ProjectViewProjectNode" />
               <item name="localhost" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="localhost" type="b2602c69:ProjectViewProjectNode" />
-              <item name="localhost" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -276,27 +284,27 @@
       <workItem from="1522694195353" duration="34000" />
       <workItem from="1522694244531" duration="126000" />
       <workItem from="1522694385679" duration="67000" />
-      <workItem from="1522694467041" duration="183000" />
+      <workItem from="1522694467041" duration="960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17533000" />
+    <option name="totallyTimeSpent" value="18310000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="109" y="15" width="1555" height="1031" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.190625" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24497992" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32922733" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -545,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/view/errors/403.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -639,10 +640,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
+        <state relative-caret-position="390">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>

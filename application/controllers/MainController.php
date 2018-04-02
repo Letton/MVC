@@ -19,6 +19,7 @@
             if (!empty($_POST)) {
                 $this->view->message('Success', 'Ваше обращение успешно отправлено!');
 
+
             }
             $this->view->render('Контакты');
 

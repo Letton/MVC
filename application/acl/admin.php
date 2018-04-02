@@ -11,6 +11,9 @@ return [
         //
     ],
     'admin' => [
-        'register',
+        'logout',
+        'add',
+        'edit',
+        'delete',
     ],
 ];

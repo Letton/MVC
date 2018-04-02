@@ -10,7 +10,7 @@
 
         function __construct($route) {
             $this->route = $route;
-            $_SESSION['auth']['id'] = 1;
+            $_SESSION['admin'] = true;
             if (!$this->checkAcl()) {
                 View::errorCode(403);
             }

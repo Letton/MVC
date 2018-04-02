@@ -6,12 +6,27 @@
     class MainController extends Controller{
 
         public function indexAction() {
-            $result = $this->model->getNews();
-            $vars = [
-              'news' => $result,
-            ];
-            $this->view->render('Main Page', $vars);
+            $this->view->render('Главная страница');
 
         }
+
+        public function aboutAction() {
+            $this->view->render('Обо мне');
+
+        }
+
+        public function contactAction() {
+            if (!empty($_POST)) {
+                $this->view->message('Success', 'Ваше обращение успешно отправлено!');
+            }
+            $this->view->render('Контакты');
+
+        }
+
+        public function postAction() {
+            $this->view->render('Пост');
+
+        }
+
 
     }

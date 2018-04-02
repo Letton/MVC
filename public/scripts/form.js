@@ -12,13 +12,16 @@ $(document).ready(function() {
 			success: function(result) {
 				json = jQuery.parseJSON(result);
 				if (json.url) {
-					window.location.href = json.url;
+					window.location.href = '/' + json.url;
 				} else {
-					alert(json.status + ' - ' + json.message);
+                    swal({
+                        title: json.status,
+                        text: json.message,
+                        icon: "success",
+                        button: "OK",
+                    });
 				}
-			}
+			},
 		});
-	
 	});
-
 });

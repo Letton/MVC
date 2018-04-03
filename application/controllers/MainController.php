@@ -17,12 +17,13 @@
 
         public function contactAction() {
             if (!empty($_POST)) {
-                $this->view->message('Success', 'Ваше обращение успешно отправлено!');
-
-
+                if  (!$this->model->contactValidate($_POST)) {
+                    $this->view->message('Error', $this->model->error);
+                }
+                mail('lettonchannel@gmail.com', 'Сообщение из блога', $_POST['name'].' | '.$_POST['email'].' | '.$_POST['text']);
+                $this->view->message('Success', 'Форма успешно отправлена!');
             }
             $this->view->render('Контакты');
-
         }
 
         public function postAction() {

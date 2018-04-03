@@ -1,2 +1,2 @@
-# MVC Blog
-MVC Blog
+# MVC
+MVC

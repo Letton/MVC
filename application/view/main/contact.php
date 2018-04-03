@@ -21,7 +21,7 @@
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                        <p><input type="text" class="form-control" name="email" placeholder="E-mail"></p>
+                        <p><input type="email" class="form-control" name="email" placeholder="E-mail"></p>
                     </div>
                 </div>
                 <div class="control-group">

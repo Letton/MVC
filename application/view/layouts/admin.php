@@ -7,16 +7,11 @@
         <link href="/public/styles/bootstrap.css" rel="stylesheet">
         <link href="/public/styles/admin.css" rel="stylesheet">
         <link href="/public/styles/font-awesome.css" rel="stylesheet">
-        <script src="/public/scripts/jquery.js"></script>
-        <script src="/public/scripts/form.js"></script>
-        <script src="/public/scripts/popper.js"></script>
-        <script src="/public/scripts/bootstrap.js"></script>
-        <script src="/public/scripts/core.js"></script>
     </head>
     <body class="fixed-nav sticky-footer bg-dark">
         <?php if ($this->route['action'] != 'login'): ?>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-                <a class="navbar-brand" href="/admin/posts">Панель Администратора</a>
+                <a class="navbar-brand" href="/admin/list">Панель Администратора</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,7 +24,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/admin/posts">
+                            <a class="nav-link" href="/admin/list">
                             <i class="fa fa-fw fa-list"></i>
                             <span class="nav-link-text">Посты</span>
                             </a>
@@ -54,5 +49,11 @@
                 </div>
             </footer>
         <?php endif; ?>
+        <script src="/public/scripts/jquery.js"></script>
+        <script src="/public/scripts/form.js"></script>
+        <script src="/public/scripts/popper.js"></script>
+        <script src="/public/scripts/bootstrap.js"></script>
+        <script src="/public/scripts/core.js"></script>
+        <script src="/public/scripts/sweetalert.min.js"></script>
     </body>
 </html>

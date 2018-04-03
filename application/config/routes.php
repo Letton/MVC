@@ -13,11 +13,17 @@
             'controller' => 'main',
             'action' => 'contact',
         ],
-        'post' => [
+        'post/{id:\d+}' => [
             'controller' => 'main',
             'action' => 'post',
         ],
         //  AdminController
+
+        'admin/list' => [
+            'controller' => 'admin',
+            'action' => 'list',
+        ],
+
         'admin/login' => [
             'controller' => 'admin',
             'action' => 'login',
@@ -30,11 +36,11 @@
             'controller' => 'admin',
             'action' => 'add',
         ],
-        'admin/edit' => [
+        'admin/edit/{id:\d+}' => [
             'controller' => 'admin',
             'action' => 'edit',
         ],
-        'admin/delete' => [
+        'admin/delete/{id:\d+}' => [
             'controller' => 'admin',
             'action' => 'delete',
         ],

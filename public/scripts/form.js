@@ -14,12 +14,21 @@ $(document).ready(function() {
 				if (json.url) {
 					window.location.href = '/' + json.url;
 				} else {
-                    swal({
-                        title: json.status,
-                        text: json.message,
-                        icon: "success",
-                        button: "OK",
-                    });
+					if (json.status != 'Error') {
+                        swal({
+                            title: json.status,
+                            text: json.message,
+                            icon: "success",
+                            button: "OK",
+                        });
+					} else {
+                        swal({
+                            title: json.status,
+                            text: json.message,
+                            icon: "error",
+                            button: "OK",
+                        });
+                    }
 				}
 			},
 		});

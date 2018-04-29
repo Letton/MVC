@@ -10,19 +10,23 @@
                         <?php else: ?>
                             <table class="table">
                                 <tr>
-                                    <th>Название</th>
-                                    <th>Редактировать</th>
-                                    <th>Удалить</th>
+                                    <th scope="col">Название</th>
+                                    <th scope="col">Редактировать</th>
+                                    <th scope="col">Удалить</th>
+                                    <th scope="col">Дата</th>
                                 </tr>
                                 <?php foreach ($list as $val): ?>
                                     <tr>
                                         <td><?php echo htmlspecialchars($val['name'], ENT_QUOTES); ?></td>
                                         <td><a href="/admin/edit/<?php echo $val['id']; ?>" class="btn btn-primary">Редактировать</a></td>
                                         <td><a href="/admin/delete/<?php echo $val['id']; ?>" class="btn btn-danger">Удалить</a></td>
+                                        <td style="white-space: nowrap;"><?php echo explode(' ', $val['date'])[0]; ?></td>
                                     </tr>
                                 <?php endforeach; ?>
                             </table>
-                            <?php echo $pagination; ?>
+                            <?php if ($postCount>$limit): ?>
+                                <?php echo $pagination; ?>
+                            <?php endif; ?>
                         <?php endif; ?>
                     </div>
                 </div>

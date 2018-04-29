@@ -3,10 +3,25 @@
 
     use application\core\Controller;
 
+    use application\lib\Pagination;
+
+    use application\core\View;
+
     class MainController extends Controller{
 
         public function indexAction() {
-            $this->view->render('Главная страница');
+            $limit = 10;
+            $pagination = new Pagination($this->route, $this->model->postCount(), $limit);
+            if (!$this->model->pageExists($this->route, $limit)) {
+                View::errorCode(404);
+            }
+            $vars = [
+                'pagination' => $pagination->get(),
+                'list' => $this->model->postList($this->route, $limit),
+                'limit' => $limit,
+                'postCount' => $this->model->postCount(),
+            ];
+            $this->view->render('Главная страница', $vars);
 
         }
 
@@ -27,9 +42,16 @@
         }
 
         public function postAction() {
-            $this->view->render('Пост');
+            if (!$this->model->isPostExists($this->route['id'])) {
+                View::errorCode(404);
+            }
+            $vars = [
+                'data' => $this->model->postData($this->route['id'])[0],
+            ];
+            $this->view->render('Пост', $vars);
 
         }
+
 
 
     }

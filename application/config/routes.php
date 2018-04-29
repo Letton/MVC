@@ -5,6 +5,10 @@
             'controller' => 'main',
             'action' => 'index',
         ],
+        'main/list/{page:\d+}' => [
+            'controller' => 'main',
+            'action' => 'index',
+        ],
         'about' => [
             'controller' => 'main',
             'action' => 'about',
@@ -13,13 +17,18 @@
             'controller' => 'main',
             'action' => 'contact',
         ],
-        'post/{id:\d+}' => [
+        'main/post/{id:\d+}' => [
             'controller' => 'main',
             'action' => 'post',
         ],
         //  AdminController
 
         'admin/list' => [
+            'controller' => 'admin',
+            'action' => 'list',
+        ],
+
+        'admin/list/{page:\d+}' => [
             'controller' => 'admin',
             'action' => 'list',
         ],

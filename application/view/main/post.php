@@ -16,4 +16,7 @@
             <p><?php echo htmlspecialchars($data['text'], ENT_QUOTES); ?></p>
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto"><h5 style="text-align: right;"><?php echo explode(' ', $data['date'])[0]; ?></h5></div>
+    </div>
 </div>
